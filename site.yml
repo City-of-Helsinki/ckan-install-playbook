@@ -1,0 +1,5 @@
+---
+- hosts: ckan
+  sudo: yes
+  roles:
+  - ckan

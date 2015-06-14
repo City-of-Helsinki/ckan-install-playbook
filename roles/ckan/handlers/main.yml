@@ -1,0 +1,15 @@
+---
+- name: Restart Nginx
+  service: name=nginx state=restarted
+
+- name: Start Nginx
+  service: name=nginx state=started
+
+- name: Restart uwsgi
+  service: name=uwsgi state=restarted
+
+- name: Start Jetty
+  service: name=jetty state=started
+
+- name: Restart Jetty
+  service: name=jetty state=restarted
